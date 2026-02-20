@@ -185,7 +185,7 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row border-l border-slate-100">
             <motion.div
-              className="lg:w-[55%] p-10 lg:p-16 border-r border-b border-slate-100"
+              className="lg:w-[55%] p-6 lg:p-16 border-r border-b border-slate-100"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
             >
@@ -248,7 +248,7 @@ const LandingPage = () => {
               </div>
             </motion.div>
 
-            <motion.div className="lg:w-[45%] p-10 lg:p-16 border-r border-b border-slate-100 bg-slate-50/30">
+            <motion.div className="lg:w-[45%] p-6 lg:p-16 border-r border-b border-slate-100 bg-slate-50/30">
               <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-12">
                 Target Audience
               </h3>
@@ -286,7 +286,7 @@ const LandingPage = () => {
       <section id="countries" className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col border-l border-slate-100">
-            <div className="p-10 lg:p-16 border-r border-b border-slate-100">
+            <div className="p-6 lg:p-16 border-r border-b border-slate-100">
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-px w-8 bg-blue-600" />
                 <span className="text-blue-600 font-bold text-[10px] uppercase tracking-[0.3em]">
