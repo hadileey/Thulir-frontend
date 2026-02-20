@@ -231,7 +231,7 @@ const Register = () => {
                   className="w-full cursor-pointer bg-blue-600 text-white py-6 px-8 text-xs font-black uppercase tracking-[0.3em] hover:bg-slate-900 transition-all flex items-center justify-center gap-4 group disabled:bg-slate-200"
                 >
                   {loading ? "Submitting ..." : "Complete Registration"}
-                  <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <ArrowUpRight size={18} className="group-hover:translate-x-1 hidden md:block group-hover:-translate-y-1 transition-transform" />
                 </button>
                 <p className="mt-6 text-[10px] text-slate-400 font-medium uppercase tracking-widest text-center">
                   *By registering, you agree to receive event invitation details via SMS/Call.
