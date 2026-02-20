@@ -173,7 +173,7 @@ const LandingPage = () => {
               </div>
               <img
                 src="https://i.ibb.co/k21zHwPX/Pngtree-female-doctor-portrait-smiling-in-23478820-1.png"
-                className="relative z-10 w-full h-[550px] object-contain hover:grayscale grayscale-0 transition-all duration-700"
+                className="relative -mb-10 md:mb-0 z-10 w-full h-[550px] object-contain hover:grayscale grayscale-0 transition-all duration-700"
                 alt="Doctor"
               />
             </div>
