@@ -230,16 +230,16 @@ const LandingPage = () => {
                 ].map((f, i) => (
                   <div
                     key={i}
-                    className="p-8 flex gap-2 items-center border-r border-b border-slate-100 group hover:bg-slate-50 transition-colors"
+                    className="p-4 md:p-8 flex gap-2 items-center border-r border-b border-slate-100 group hover:bg-slate-50 transition-colors"
                   >
                     <div className="text-slate-300 group-hover:text-blue-600 mb-4 transition-colors">
                       {f.icon}
                     </div>
                     <div>
-                      <h4 className="font-black text-[10px] uppercase tracking-widest text-slate-900 mb-2">
+                      <h4 className="font-black text-[14px] uppercase tracking-widest text-slate-900 mb-2">
                         {f.title}
                       </h4>
-                      <p className="text-slate-500 text-[11px] leading-relaxed font-medium uppercase">
+                      <p className="text-slate-500 text-[12px] leading-relaxed font-medium uppercase">
                         {f.desc}
                       </p>
                     </div>
