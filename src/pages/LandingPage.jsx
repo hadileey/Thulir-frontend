@@ -119,7 +119,7 @@ const LandingPage = () => {
       <section className="relative pt-14 overflow-hidden border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row border-l border-slate-100">
-            <div className="lg:w-3/5 p-10 lg:p-16 border-r border-slate-100">
+            <div className="lg:w-3/5 p-6 lg:p-16 border-r border-slate-100">
               <div className="inline-flex items-center gap-3 mb-8">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
