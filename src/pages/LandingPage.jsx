@@ -309,7 +309,7 @@ const LandingPage = () => {
               {countries.map((country, idx) => (
                 <div
                   key={country}
-                  className="group relative p-10 border-r border-b border-slate-100 transition-colors duration-500 hover:bg-slate-50/50 cursor-pointer overflow-hidden"
+                  className="group relative p-6 border-r border-b border-slate-100 transition-colors duration-500 hover:bg-slate-50/50 cursor-pointer overflow-hidden"
                   onClick={() => navigate("/register")}
                 >
                   <div className="absolute top-0 left-0 w-full h-1 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
@@ -342,7 +342,7 @@ const LandingPage = () => {
       <section id="benefits" className="bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col border-l border-slate-100">
-            <div className="p-10 lg:p-16 border-r border-b border-slate-100 flex flex-col md:flex-row justify-between items-end gap-6">
+            <div className="p-6 lg:p-16 border-r border-b border-slate-100 flex flex-col md:flex-row justify-between items-end gap-6">
               <div className="max-w-2xl">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="h-px w-8 bg-blue-600" />
@@ -390,7 +390,7 @@ const LandingPage = () => {
               ].map((benefit, idx) => (
                 <div
                   key={idx}
-                  className="group relative p-10 border-r border-b border-slate-100 hover:bg-slate-50/50 transition-all duration-500 cursor-default overflow-hidden"
+                  className="group relative p-6 border-r border-b border-slate-100 hover:bg-slate-50/50 transition-all duration-500 cursor-default overflow-hidden"
                 >
                   <div className="absolute top-0 left-0 w-full h-1 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
@@ -438,7 +438,7 @@ const LandingPage = () => {
       <section className="bg-white border-t border-slate-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col border-l border-slate-100">
-            <div className="p-10 lg:p-16 border-r border-b border-slate-100 flex flex-col md:flex-row justify-between items-end gap-6">
+            <div className="p-6 lg:p-16 border-r border-b border-slate-100 flex flex-col md:flex-row justify-between items-end gap-6">
               <div className="max-w-2xl">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="h-px w-8 bg-blue-600" />
@@ -487,7 +487,7 @@ const LandingPage = () => {
               ].map((t, idx) => (
                 <div
                   key={idx}
-                  className="group relative p-10 border-r border-b border-slate-100 hover:bg-slate-50/50 transition-all duration-500 cursor-default"
+                  className="group relative p-6 border-r border-b border-slate-100 hover:bg-slate-50/50 transition-all duration-500 cursor-default"
                 >
                   <div className="absolute top-10 right-10 text-slate-50 font-black text-6xl select-none group-hover:text-blue-50/50 transition-colors duration-500">
                     0{idx + 1}
@@ -559,7 +559,7 @@ const LandingPage = () => {
                 }}
               />
 
-              <div className="relative z-10 flex-1 p-10 lg:p-20 border-b lg:border-b-0 lg:border-r border-slate-900">
+              <div className="relative z-10 flex-1 p-6 lg:p-20 border-b lg:border-b-0 lg:border-r border-slate-900">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="h-px w-12 bg-blue-600" />
                   <span className="text-blue-500 font-black text-[10px] uppercase tracking-[0.4em]">
@@ -630,12 +630,6 @@ const LandingPage = () => {
                   profile.
                 </p>
               </div>
-
-              <div className="absolute top-0 right-0 p-4 opacity-20">
-                <div className="text-white font-mono text-[10px] uppercase tracking-tighter rotate-90 origin-right">
-                  SYSTEM_AUTH_REQUIRED // 2026_EXPO
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -644,7 +638,7 @@ const LandingPage = () => {
       <footer id="contact" className="bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 border-l border-slate-100">
-            <div className="p-10 border-r border-b border-slate-100">
+            <div className="p-6 md:p-10 border-r border-b border-slate-100">
               <span className="text-xl font-black text-slate-900 uppercase tracking-tighter">
                 Medico<span className="text-slate-300 font-light">Expo</span>
               </span>
@@ -652,7 +646,7 @@ const LandingPage = () => {
                 South India's Trusted Medical Education Fair since 2018.
               </p>
             </div>
-            <div className="p-10 border-r border-b border-slate-100">
+            <div className="p-6 md:p-10 border-r border-b border-slate-100">
               <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-8">
                 Navigation
               </h4>
@@ -691,7 +685,7 @@ const LandingPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-10 border-r border-b border-slate-100">
+            <div className="p-6 md:p-10 border-r border-b border-slate-100">
               <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-8">
                 Contact Hub
               </h4>
@@ -702,7 +696,7 @@ const LandingPage = () => {
                 info.tn@klickedu.com
               </p>
             </div>
-            <div className="p-10 border-r border-b border-slate-100 bg-slate-50/50">
+            <div className="p-6 md:p-10 border-r border-b border-slate-100 bg-slate-50/50">
               <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-8">
                 Live Status
               </h4>
@@ -714,7 +708,7 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div className="py-12 flex justify-center items-center text-[10px] font-black uppercase tracking-[0.3em] text-slate-300 border-l border-slate-100 pl-10">
+          <div className="py-12 flex justify-center items-center text-[10px] font-black uppercase tracking-[0.3em] text-slate-300 border-l border-slate-100 pL-0 md:pl-10">
             <span>© 2026 Medico Expo</span>
           </div>
         </div>
