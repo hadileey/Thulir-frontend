@@ -326,7 +326,7 @@ const LandingPage = () => {
                   <h3 className="text-xl font-black text-slate-900 uppercase tracking-tighter">
                     {country}
                   </h3>
-                  <div className="mt-4 flex items-center gap-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                  <div className="mt-4 flex items-center gap-2  md:opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                     <span className="text-[9px] font-black uppercase tracking-[0.2em] text-blue-600">
                       Register Now
                     </span>
@@ -394,7 +394,7 @@ const LandingPage = () => {
                 >
                   <div className="absolute top-0 left-0 w-full h-1 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
-                  <div className="absolute top-10 right-10 text-slate-50 font-black text-6xl select-none group-hover:text-blue-50/50 transition-colors duration-500">
+                  <div className="absolute top-10 right-10 text-slate-100 font-black text-6xl select-none group-hover:text-blue-50/50 transition-colors duration-500">
                     {benefit.id}
                   </div>
 
@@ -419,7 +419,7 @@ const LandingPage = () => {
                     </p>
 
                     <div
-                      className="pt-6 border-t border-slate-100 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0 hover:cursor-pointer"
+                      className="pt-6 border-t border-slate-100 flex justify-between items-center md:opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0 hover:cursor-pointer"
                       onClick={() => navigate("/register")}
                     >
                       <span className="text-[9px] font-black uppercase tracking-[0.2em] text-slate-900">
