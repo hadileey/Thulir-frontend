@@ -45,7 +45,6 @@ const AdminDashboard = () => {
     getData();
   }, []);
 
-  // Get the current 10 records to display
   const currentViewData = students.slice(startIndex, startIndex + rowsPerPage);
 
   const handleNext = () => {
@@ -142,8 +141,8 @@ const AdminDashboard = () => {
             </div>
           ) : (
             <>
-              <div className="border border-slate-900 bg-slate-950 overflow-auto custom-scrollbar flex-1">
-                <table className="w-full text-left border-collapse min-w-[1000px]">
+              <div className="border border-slate-900 bg-slate-950 overflow-hidden flex-1">
+                <table className="w-full text-left border-collapse min-w-250">
                   <thead className="sticky top-0 bg-slate-950 z-10">
                     <tr className="border-b border-slate-900 bg-slate-900/50">
                       <th className="p-6 text-[10px] font-black uppercase text-slate-500 w-16 text-center border-r border-slate-900">ID</th>
@@ -156,7 +155,7 @@ const AdminDashboard = () => {
                   </thead>
                   <tbody className="font-mono text-[12px]">
                     {currentViewData.map((st, i) => {
-                        const actualID = startIndex + i + 1; // Correct ID numbering
+                        const actualID = startIndex + i + 1;
                         return (
                       <tr key={i} className="border-b border-slate-900 hover:bg-slate-900/30 transition-colors">
                         <td className="p-6 text-center text-slate-700 border-r border-slate-900 font-bold">
@@ -177,7 +176,6 @@ const AdminDashboard = () => {
                 </table>
               </div>
 
-              {/* Navigation Bar at Bottom */}
               <div className="mt-6 flex justify-between items-center bg-slate-950 border border-slate-900 p-4">
                 <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-slate-600">
                   Showing {startIndex + 1} to {Math.min(startIndex + rowsPerPage, students.length)} of {students.length}
