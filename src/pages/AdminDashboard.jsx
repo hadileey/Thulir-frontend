@@ -18,9 +18,8 @@ const AdminDashboard = () => {
   const [loading, setLoading] = useState(true);
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   
-  // View State (0 = first 10, 10 = next 10, etc.)
   const [startIndex, setStartIndex] = useState(0);
-  const rowsPerPage = 10;
+  const rowsPerPage = 5;
 
   useEffect(() => {
     const getData = async () => {
@@ -34,7 +33,6 @@ const AdminDashboard = () => {
         );
         const result = await response.json();
         if (result.success) {
-          // SORTING: Ascending order (First person who registered is ID 1)
           const sorted = result.data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
           setStudents(sorted);
         }
