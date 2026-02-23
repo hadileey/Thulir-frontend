@@ -167,7 +167,7 @@ const AdminDashboard = () => {
                           <MapPin size={12} className="text-blue-600" /> {st.city}
                         </td>
                         <td className="p-5.5 border-r border-slate-900 text-slate-300 uppercase">{st.neetStatus}</td>
-                        <td className="p-6 ">
+                        <td className="p-5.5">
                            <span className="border border-blue-500/20 px-2 py-1 text-blue-400">[{st.collegePreference}]</span>
                         </td>
                       </tr>
