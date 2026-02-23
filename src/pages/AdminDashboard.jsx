@@ -138,7 +138,6 @@ const AdminDashboard = () => {
         </header>
 
         <div className="p-10 flex-1 flex flex-col min-h-0">
-          
           {loading ? (
             <div className="h-full flex items-center justify-center">
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-700 animate-pulse">Syncing_Records...</span>
