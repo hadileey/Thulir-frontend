@@ -158,16 +158,16 @@ const AdminDashboard = () => {
                         const actualID = startIndex + i + 1;
                         return (
                       <tr key={i} className="border-b border-slate-900 hover:bg-slate-900/30 transition-colors">
-                        <td className="p-6 text-center text-slate-700 border-r border-slate-900 font-bold">
+                        <td className="p-5 text-center text-slate-700 border-r border-slate-900 font-bold">
                           {actualID.toString().padStart(3, "0")}
                         </td>
-                        <td className="p-6 border-r border-slate-900 text-white font-bold uppercase">{st.fullName}</td>
-                        <td className="p-6 border-r border-slate-900 text-slate-300">{st.mobileNumber}</td>
-                        <td className="p-6 border-r border-slate-900 flex items-center gap-2 mt-4 border-none">
+                        <td className="p-5 border-r border-slate-900 text-white font-bold uppercase">{st.fullName}</td>
+                        <td className="p-5 border-r border-slate-900 text-slate-300">{st.mobileNumber}</td>
+                        <td className="p-5 border-r border-slate-900 flex items-center gap-2 mt-4 border-none">
                           <MapPin size={12} className="text-blue-600" /> {st.city}
                         </td>
-                        <td className="p-6 border-r border-slate-900 text-slate-300 uppercase">{st.neetStatus}</td>
-                        <td className="p-6">
+                        <td className="p-5 border-r border-slate-900 text-slate-300 uppercase">{st.neetStatus}</td>
+                        <td className="p-5">
                            <span className="border border-blue-500/20 px-2 py-1 text-blue-400">[{st.collegePreference}]</span>
                         </td>
                       </tr>
